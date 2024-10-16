@@ -1500,7 +1500,7 @@ body:has(#theme-toggle:checked) {
 
 body::before {
   content: '';
-  background: url(../img/hero-bg.jpg) center no-repeat;
+  background: url(../img/hero-bg.png) center no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
