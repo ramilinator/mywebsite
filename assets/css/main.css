@@ -1495,7 +1495,7 @@ body:has(#theme-toggle:checked) {
   flex-direction: column;
   text-align: center;
   gap: 30px;
-  min-height: calc(100vh);
+  min-height: calc(96vh);
   padding-inline: 16px;
 }
 
@@ -1548,7 +1548,7 @@ body::after {
   display: flex;
   align-items: center;
   text-align: center;
-  min-height: 50vh;
+  min-height: 90vh;
 }
 
 .call-to-action img {
