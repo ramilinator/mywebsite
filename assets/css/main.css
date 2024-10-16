@@ -168,6 +168,8 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  letter-spacing: -19px;
+  margin-left: 16px;
 }
 
 .header .logo img {
@@ -331,7 +333,6 @@ h6 {
     color: var(--default-color);
     font-size: 32px;
     line-height: 0;
-    margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -1481,11 +1482,11 @@ body:has(#theme-toggle:checked) {
 
 .profile-picture {
   --heading-color: #1b2f45;
-  width: clamp(150px, 15vw, 20vw);
-  height: clamp(150px, 15vw, 20vw);
+  width: 150px;
+  height: 150px;
   border-radius: 32px;
   overflow: hidden;
-  margin-bottom: 32px;
+  margin-bottom: var(--bs-gutter-x)
 }
 
 .profile-pic-wrapper {
@@ -1497,6 +1498,10 @@ body:has(#theme-toggle:checked) {
   gap: 30px;
   min-height: calc(96vh);
   padding-inline: 16px;
+}
+
+.profile-pic-wrapper .profile-picture {
+  margin-bottom: 0;
 }
 
 body::before {
