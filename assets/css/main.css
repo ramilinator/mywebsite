@@ -1483,7 +1483,7 @@ body:has(#theme-toggle:checked) {
   --heading-color: #1b2f45;
   width: clamp(150px, 15vw, 25vw);
   height: clamp(150px, 15vw, 25vw);
-  border-radius: 50%;
+  border-radius: 10%;
   overflow: hidden;
 }
 
