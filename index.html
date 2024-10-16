@@ -71,7 +71,7 @@
       </nav>
 
       <div class="theme-toggle-wrapper">
-        <span class="theme-toggler__label">Dark Mode</span>
+        <span class="theme-toggler__label">Theme</span>
         <input type="checkbox" id="theme-toggle" class="theme-toggler">
       </div>
       
@@ -88,9 +88,7 @@
   <main class="main">
 
     <section id="hero" class="profile-pic-wrapper">
-        <div class="profile-picture">
-          <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-        </div>
+        
         <div>
           <h2>RAMIL AOANAN</h2>
           <p>I'm a professional web developer from the Philippines</p>
@@ -136,14 +134,16 @@
 
       <div class="container " data-aos="fade-up" data-aos-delay="100">
 
+        <div class="profile-picture">
+          <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+        </div>
+
+
         <div class="row gy-4 justify-content-center">
  
-          <!-- <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid border-radius-20px" alt="">
-          </div> -->
-
+        
           <div class="content">
-            
+
             <p>
               
               I'm a web developer with over 10 years of professional experience. I specialize in front-end development, with a focus on building modern, responsive websites that provide an optimal user experience.
@@ -508,6 +508,15 @@ These hobbies not only bring joy to my life but also reflect my love for adventu
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+   
+    window.onload = function() {
+    // Select the checkbox by its ID and set it to checked
+    document.getElementById('theme-toggle').checked = true;
+  };
+    
+  </script>
 
 </body>
 
