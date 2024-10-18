@@ -118,7 +118,8 @@
       <div class="container">
         <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10"> 
-            <h1> <span id="greeting"></span> <br> My name is Ramil <br >Nice to meet you :) </h1> 
+            <h1 id="greeting"></h1>
+            <p>My name is Ramil. I'm a web developer from the Philippines.</p>
           </div>
           
         </div>
@@ -519,12 +520,9 @@
         greeting = "Good morning!";
     } else if (currentHour >= 12 && currentHour < 17) {
         greeting = "Good afternoon!";
-    } else if (currentHour >= 17 && currentHour < 21) {
+    } else if (currentHour >= 17 && currentHour < 24) {
         greeting = "Good evening!";
-    } else {
-        greeting = "Good night!";
     }
-
     // Insert the greeting into the #greeting element
     document.getElementById('greeting').textContent = greeting;
 }
