@@ -158,7 +158,7 @@ h6 {
   z-index: 997;
 }
 
-.header .logo {
+a.logo {
   line-height: 1;
   letter-spacing: -19px;
   margin-left: 16px;
@@ -1477,7 +1477,7 @@ label.theme-toggler {
 
 .about-me-pic {
   position: absolute;
-  right: 48vw;
+  right: 50vw;
   bottom: 0;
   width: 760px;
   z-index: 2;
