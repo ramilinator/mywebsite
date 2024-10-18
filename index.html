@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/hello.css" rel="stylesheet">
 
  
 </head>
@@ -87,7 +88,7 @@
 
   <main class="main">
 
-    <section id="hero" class="profile-pic-wrapper">
+    <!-- <section id="hero" class="profile-pic-wrapper">
 
       <div class="profile-picture">
         <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
@@ -102,22 +103,22 @@
           <i class="bi bi-chevron-down"></i>
           <i class="bi bi-chevron-down"></i>
         </a>
-    </section>
+    </section> -->
 
-    <section id="call-to-action" class="call-to-action section dark-background">
+    <section id="call-to-action" class="call-to-action section">
 
-      <img src="https://images.unsplash.com/photo-1610524193579-35934d02c8f3?q=80&w=2940&auto=format&fit=crop" alt="">
+      <img class="bg-img" src="https://images.unsplash.com/photo-1610524193579-35934d02c8f3?q=80&w=2940&auto=format&fit=crop" alt="">
+
+      <div class="about-me-pic">
+        <img src="./assets/img/about-me-no-bg.png" class="img-fluid" alt="">
+      </div>
+
+
 
       <div class="container">
         <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>There are no limits to what you can accomplish, except the limits you place on your own thinking</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            
+          <div class="col-xl-10"> 
+            <h1> <span id="greeting"></span> <br> My name is Ramil <br >Nice to meet you :) </h1> 
           </div>
           
         </div>
@@ -138,43 +139,33 @@
 
       <div class="container " data-aos="fade-up" data-aos-delay="100">
 
-        <div class="profile-picture">
-          <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-        </div>
+        <div class="row justify-content-center">
+          
+           
+              <div class="content">
+    
+                <p>
+                  
+                  I'm a web developer with over 10 years of professional experience. I specialize in front-end development, with a focus on building modern, responsive websites that provide an optimal user experience.
+                </p>
+    
+                <p>
+                  My passion for coding fuels my desire to continually learn and refine my skills. Throughout my journey, I've faced diverse challenges that have sharpened my expertise and deepened my commitment to delivering top-tier web experiences.
+                </p>
+    
+                  <p>
+                    I work extensively with HTML, CSS, and JavaScript, and believe that exceptional design and development come from attention to detail, collaboration, and creativity.
+                  </p>
+                  
+                  <p>
+                    Outside of work, I love exploring new places through rides and often find myself at a coffee shop, enjoying a warm cup of coffee while listening to my favorite musics.
+    
+    These hobbies not only bring joy to my life but also reflect my love for adventure and self expression and creativity.
+    
+                  </p>
 
-
-        <div class="row gy-4 justify-content-center">
- 
         
-          <div class="content">
-
-            <p>
-              
-              I'm a web developer with over 10 years of professional experience. I specialize in front-end development, with a focus on building modern, responsive websites that provide an optimal user experience.
-            </p>
-
-            <p>
-              My passion for coding fuels my desire to continually learn and refine my skills. Throughout my journey, I've faced diverse challenges that have sharpened my expertise and deepened my commitment to delivering top-tier web experiences.
-            </p>
-
-              <p>
-                I work extensively with HTML, CSS, and JavaScript, and believe that exceptional design and development come from attention to detail, collaboration, and creativity.
-              </p>
-              
-              <p>
-                Outside of work, I love exploring new places through rides and often find myself at a coffee shop, enjoying a warm cup of coffee while listening to my favorite musics.
-
-These hobbies not only bring joy to my life but also reflect my love for adventure and self expression and creativity.
-
-              </p>
-              
-              
-            
-            </p>
-
           </div>
-
-
         </div>
 
       </div>
@@ -518,7 +509,29 @@ These hobbies not only bring joy to my life but also reflect my love for adventu
     window.onload = function() {
     // Select the checkbox by its ID and set it to checked
     document.getElementById('theme-toggle').checked = true;
-  };
+    };
+
+    function greetUser() {
+    const currentHour = new Date().getHours();
+    let greeting;
+
+    if (currentHour >= 5 && currentHour < 12) {
+        greeting = "Good morning!";
+    } else if (currentHour >= 12 && currentHour < 17) {
+        greeting = "Good afternoon!";
+    } else if (currentHour >= 17 && currentHour < 21) {
+        greeting = "Good evening!";
+    } else {
+        greeting = "Good night!";
+    }
+
+    // Insert the greeting into the #greeting element
+    document.getElementById('greeting').textContent = greeting;
+}
+
+// Call the function to greet the user
+greetUser();
+
     
   </script>
 
