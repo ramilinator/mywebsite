@@ -118,8 +118,8 @@
       <div class="container">
         <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">             
-            <h1><span id="greeting"> </span></h1>
-            <h1>Nice to meet you.</h1>
+            <h1 class="highlight"><span id="greeting"> </span></h1>
+            <h1>Nice meeting you.</h1>
           </div>
           
         </div>
@@ -147,7 +147,7 @@
     
                 <p>
                   
-                  Hello! My name is Ramil, I'm a web developer with over 10 years of professional experience. I specialize in front-end development, with a focus on building modern, responsive websites that provide an optimal user experience.
+                  Hello, My name is Ramil. I'm a web developer with over 10 years of professional experience. I specialize in front-end development, with a focus on building modern, responsive websites that provide an optimal user experience.
                 </p>
     
                 <p>
@@ -356,7 +356,7 @@
         <p>I have an unquenchable passion for exploring new landscapes through rides. And often end up at coffeeshop to unwind and savor a warm cup of coffee. </p>
       </div><!-- End Section Title -->
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+      <div class="container-full" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-0">
 
@@ -520,11 +520,11 @@
     let greeting;
 
     if (currentHour >= 5 && currentHour < 12) {
-        greeting = "Good morning!";
+        greeting = "Good Morning!";
     } else if (currentHour >= 12 && currentHour < 17) {
-        greeting = "Good afternoon!";
+        greeting = "Good Afternoon!";
     } else if (currentHour >= 17 && currentHour < 24) {
-        greeting = "Good evening!";
+        greeting = "Good Evening!";
     }
     // Insert the greeting into the #greeting element
     document.getElementById('greeting').textContent = greeting;
